@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ## Packwerk Migration Progress
 
+### Pack 4: statuses (COMPLETED)
+- **Status**: ✅ All tests passing (197 examples, 0 failures)
+- **Packwerk**: ✅ No violations
+- **Files moved**: 41 application files, 13 spec files
+- **Components**:
+  - Models: Status, StatusEdit, StatusPin, StatusStat, StatusTrend, ScheduledStatus, Mention, MediaAttachment, Poll, PollVote, PreviewCard
+  - Controllers: Statuses, API statuses endpoints (bookmarks, favourites, histories, pins, quotes, reblogs, translations, etc.)
+  - Services: PostStatusService, UpdateStatusService, RemoveStatusService, TranslateStatusService, ActivityPub status services
+  - Workers: Status indexing, scheduled status publishing, status update distribution
+- **Dependencies**: packs/shared, packs/accounts
+
 ### Pack 3: users (COMPLETED)
 - **Status**: ✅ All tests passing (383 examples, 0 failures)
 - **Packwerk**: ✅ No violations
