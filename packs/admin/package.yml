@@ -1,0 +1,13 @@
+# Admin and moderation domain
+enforce_dependencies: false
+enforce_privacy: false
+
+dependencies:
+  - packs/shared
+  - packs/accounts
+  - packs/users
+  - packs/statuses
+
+metadata:
+  owner: Admin Team
+  description: Administration and moderation features
