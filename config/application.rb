@@ -59,14 +59,14 @@ module Mastodon
   class Application < Rails::Application
     # Add packs to autoload paths FIRST, before anything else loads
     config.paths.add 'packs', glob: '{*/app/*,*/app/*/concerns}'
-    Dir[Rails.root.join('packs', '*', 'app', '*')].each do |path|
+    Rails.root.glob('packs/*/app/*').each do |path|
       config.autoload_paths << path
       config.eager_load_paths << path
     end
-    Dir[Rails.root.join('packs', '*', 'app', 'views')].each do |path|
+    Rails.root.glob('packs/*/app/views').each do |path|
       config.paths['app/views'] << path
     end
-    Dir[Rails.root.join('packs', '*', 'app', 'helpers')].each do |path|
+    Rails.root.glob('packs/*/app/helpers').each do |path|
       config.paths['app/helpers'] << path
     end
 

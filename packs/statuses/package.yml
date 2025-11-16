@@ -1,0 +1,11 @@
+# Posts/Statuses domain
+enforce_dependencies: false
+enforce_privacy: false
+
+dependencies:
+  - packs/shared
+  - packs/accounts
+
+metadata:
+  owner: Content Team
+  description: Status (post) creation, editing, and management
