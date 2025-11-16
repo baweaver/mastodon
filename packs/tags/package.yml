@@ -1,0 +1,12 @@
+# Tags and hashtags domain
+enforce_dependencies: false
+enforce_privacy: false
+
+dependencies:
+  - packs/shared
+  - packs/accounts
+  - packs/statuses
+
+metadata:
+  owner: Content Team
+  description: Hashtags, featured tags, and tag following
