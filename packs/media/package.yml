@@ -1,0 +1,11 @@
+# Media and attachments domain
+enforce_dependencies: false
+enforce_privacy: false
+
+dependencies:
+  - packs/shared
+  - packs/accounts
+
+metadata:
+  owner: Media Team
+  description: Media attachments, custom emojis, and preview cards
