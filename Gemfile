@@ -28,6 +28,7 @@ gem 'bootsnap', '~> 1.18.0', require: false
 gem 'browser'
 gem 'charlock_holmes', '~> 0.7.7'
 gem 'chewy', '~> 7.3'
+gem 'packwerk', '~> 3.2'
 gem 'devise', '~> 4.9'
 gem 'devise-two-factor'
 

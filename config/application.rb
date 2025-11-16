@@ -57,6 +57,13 @@ Bundler.require(:pam_authentication) if ENV['PAM_ENABLED'] == 'true'
 
 module Mastodon
   class Application < Rails::Application
+    # Add packs to autoload paths FIRST, before anything else loads
+    config.paths.add 'packs', glob: '{*/app/*,*/app/*/concerns}'
+    Dir[Rails.root.join('packs', '*', 'app', '*')].each do |path|
+      config.autoload_paths << path
+      config.eager_load_paths << path
+    end
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
 

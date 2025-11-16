@@ -1,0 +1,17 @@
+# Packwerk configuration for Mastodon
+
+# Include Ruby files
+include:
+  - "**/*.{rb,rake,erb}"
+
+# Exclude non-application directories
+exclude:
+  - "{bin,node_modules,script,tmp,vendor}/**/*"
+
+# Find packages in root and packs directory
+package_paths: "{.,packs/*}/"
+
+# Enable cache for performance
+cache: true
+cache_directory: 'tmp/cache/packwerk'
+
