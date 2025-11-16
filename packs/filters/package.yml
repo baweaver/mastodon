@@ -1,0 +1,12 @@
+# Content filters domain
+enforce_dependencies: false
+enforce_privacy: false
+
+dependencies:
+  - packs/shared
+  - packs/accounts
+  - packs/statuses
+
+metadata:
+  owner: Content Team
+  description: Content filtering and custom filters
