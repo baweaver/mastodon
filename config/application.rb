@@ -63,6 +63,12 @@ module Mastodon
       config.autoload_paths << path
       config.eager_load_paths << path
     end
+    Dir[Rails.root.join('packs', '*', 'app', 'views')].each do |path|
+      config.paths['app/views'] << path
+    end
+    Dir[Rails.root.join('packs', '*', 'app', 'helpers')].each do |path|
+      config.paths['app/helpers'] << path
+    end
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0

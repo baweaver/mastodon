@@ -1,0 +1,11 @@
+# User authentication and settings
+enforce_dependencies: false
+enforce_privacy: false
+
+dependencies:
+  - packs/shared
+  - packs/accounts
+
+metadata:
+  owner: Auth Team
+  description: User authentication, sessions, settings, and invites
