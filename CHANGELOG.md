@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 ## Packwerk Migration Progress
 
+### Pack 6: lists (COMPLETED)
+- **Status**: ✅ All tests passing (14 examples, 0 failures)
+- **Packwerk**: ✅ No violations
+- **Files moved**: 11 application files, 4 spec files
+- **Components**: List, ListAccount, ListFeed, Conversation, ConversationMute, AccountConversation, list controllers
+- **Dependencies**: packs/shared, packs/accounts, packs/statuses
+
+### Pack 5: notifications (COMPLETED)
+- **Status**: ✅ All tests passing (29 examples, 0 failures)
+- **Packwerk**: ✅ No violations
+- **Files moved**: 15 application files, 3 spec files
+- **Components**: Notification, NotificationGroup, NotificationPolicy, NotificationRequest, notification controllers and workers
+- **Dependencies**: packs/shared, packs/accounts, packs/statuses
+
 ### Pack 4: statuses (COMPLETED)
 - **Status**: ✅ All tests passing (197 examples, 0 failures)
 - **Packwerk**: ✅ No violations
