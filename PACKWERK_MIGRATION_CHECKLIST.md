@@ -1,6 +1,6 @@
 # Packwerk Migration Checklist
 
-## Completed Packs (9/27)
+## Completed Packs (10/27)
 
 - [x] Pack 1: shared - 98 tests ✅
 - [x] Pack 2: accounts - 216 tests ✅
@@ -11,17 +11,18 @@
 - [x] Pack 7: admin - 50 tests ✅
 - [x] Pack 8: media - 15 tests ✅
 - [x] Pack 9: filters - 23 tests ✅
+- [x] Pack 10: tags - 105 tests ✅
 
-**Total: 1,289 tests passing**
+**Total: 1,394 tests passing**
 
-## Remaining Packs (18)
+## Remaining Packs (17)
 
 ### High Priority
 
-- [ ] Pack 10: announcements (Announcement, AnnouncementReaction, AnnouncementMute)
-- [ ] Pack 11: tags (Tag, FeaturedTag, TagFollow)
+- [ ] Pack 11: announcements (Announcement, AnnouncementReaction, AnnouncementMute)
 - [ ] Pack 12: trends (Trends models and controllers)
 - [ ] Pack 13: search (Search services and controllers)
+- [ ] Pack 14: timelines (Feed, HomeFeed, timeline controllers)
 - [ ] Pack 14: timelines (Feed, HomeFeed, timeline controllers)
 
 ### Medium Priority
