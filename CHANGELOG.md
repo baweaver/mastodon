@@ -4,7 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ## Packwerk Migration Progress
 
+### Pack 9: filters (COMPLETED)
+
+- **Status**: ✅ All tests passing (23 examples, 0 failures)
+- **Packwerk**: ✅ No violations
+- **Files moved**: 9 application files, 2 spec files
+- **Components**: CustomFilter, CustomFilterKeyword, CustomFilterStatus, filter controllers
+- **Dependencies**: packs/shared, packs/accounts, packs/statuses
+
+### Pack 8: media (COMPLETED)
+
+- **Status**: ✅ All tests passing (15 examples, 0 failures)
+- **Packwerk**: ✅ No violations
+- **Files moved**: 5 application files, 2 spec files
+- **Components**: CustomEmoji, CustomEmojiCategory, media workers
+- **Dependencies**: packs/shared, packs/accounts
+
 ### Pack 7: admin (COMPLETED)
+
 - **Status**: ✅ All tests passing (50 examples, 0 failures)
 - **Packwerk**: ✅ No violations
 - **Files moved**: 82 application files, 7 spec files
@@ -12,6 +29,7 @@ All notable changes to this project will be documented in this file.
 - **Dependencies**: packs/shared, packs/accounts, packs/users, packs/statuses
 
 ### Pack 6: lists (COMPLETED)
+
 - **Status**: ✅ All tests passing (14 examples, 0 failures)
 - **Packwerk**: ✅ No violations
 - **Files moved**: 11 application files, 4 spec files
@@ -19,6 +37,7 @@ All notable changes to this project will be documented in this file.
 - **Dependencies**: packs/shared, packs/accounts, packs/statuses
 
 ### Pack 5: notifications (COMPLETED)
+
 - **Status**: ✅ All tests passing (29 examples, 0 failures)
 - **Packwerk**: ✅ No violations
 - **Files moved**: 15 application files, 3 spec files
@@ -26,6 +45,7 @@ All notable changes to this project will be documented in this file.
 - **Dependencies**: packs/shared, packs/accounts, packs/statuses
 
 ### Pack 4: statuses (COMPLETED)
+
 - **Status**: ✅ All tests passing (197 examples, 0 failures)
 - **Packwerk**: ✅ No violations
 - **Files moved**: 41 application files, 13 spec files
@@ -37,10 +57,11 @@ All notable changes to this project will be documented in this file.
 - **Dependencies**: packs/shared, packs/accounts
 
 ### Pack 3: users (COMPLETED)
+
 - **Status**: ✅ All tests passing (383 examples, 0 failures)
 - **Packwerk**: ✅ No violations
 - **Files moved**: 101 application files, 82 spec files
-- **Components**: 
+- **Components**:
   - Models: User, Invite, LoginActivity, SessionActivation, UserRole, UserSettings, WebauthnCredential
   - Controllers: Auth (sessions, registrations, confirmations, passwords, challenges, setup, omniauth), Settings (all user settings controllers), Invites
   - Mailers: UserMailer with 20 email templates
@@ -56,6 +77,7 @@ All notable changes to this project will be documented in this file.
   - Created .tool-versions for Node.js
 
 ### Pack 2: accounts (COMPLETED)
+
 - **Status**: ✅ All tests passing (216 examples, 0 failures)
 - **Packwerk**: ✅ No violations
 - **Files moved**: 26 application files, 13 spec files
@@ -63,6 +85,7 @@ All notable changes to this project will be documented in this file.
 - **Dependencies**: packs/shared
 
 ### Pack 1: shared (COMPLETED)
+
 - **Status**: ✅ All tests passing (98 examples, 0 failures)
 - **Packwerk**: ✅ No violations
 - **Files moved**: 41 application files, 17 spec files
