@@ -1,0 +1,12 @@
+# Notifications domain
+enforce_dependencies: false
+enforce_privacy: false
+
+dependencies:
+  - packs/shared
+  - packs/accounts
+  - packs/statuses
+
+metadata:
+  owner: Notifications Team
+  description: User notifications and notification policies
