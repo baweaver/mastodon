@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file.
 
+## Packwerk Migration Progress
+
+### Pack 3: users (COMPLETED)
+- **Status**: ✅ All tests passing (383 examples, 0 failures)
+- **Packwerk**: ✅ No violations
+- **Files moved**: 101 application files, 82 spec files
+- **Components**: 
+  - Models: User, Invite, LoginActivity, SessionActivation, UserRole, UserSettings, WebauthnCredential
+  - Controllers: Auth (sessions, registrations, confirmations, passwords, challenges, setup, omniauth), Settings (all user settings controllers), Invites
+  - Mailers: UserMailer with 20 email templates
+  - Services: AppSignUpService
+  - Workers: User cleanup schedulers
+  - Helpers: SettingsHelper, RegistrationHelper
+  - Views: Complete auth and settings view hierarchy
+- **Dependencies**: packs/shared, packs/accounts
+- **Infrastructure changes**:
+  - Added pack view paths to Rails view paths
+  - Added pack helper paths to Rails helper paths
+  - Built Vite assets for test environment
+  - Created .tool-versions for Node.js
+
+### Pack 2: accounts (COMPLETED)
+- **Status**: ✅ All tests passing (216 examples, 0 failures)
+- **Packwerk**: ✅ No violations
+- **Files moved**: 26 application files, 13 spec files
+- **Components**: Account model, AccountFilter, AccountStatuses, AccountSuggestions, AccountWarning, Follow, FollowRequest, FollowRecommendation, Block, Mute, AccountMigration, AccountAlias, AccountDomainBlock, AccountModerationNote, AccountPin, AccountStat, AccountStatusesCleanupPolicy, CanonicalEmailBlock, Favourite, Bookmark, services, workers
+- **Dependencies**: packs/shared
+
+### Pack 1: shared (COMPLETED)
+- **Status**: ✅ All tests passing (98 examples, 0 failures)
+- **Packwerk**: ✅ No violations
+- **Files moved**: 41 application files, 17 spec files
+- **Components**: Validators, helpers, utility libraries, connection_pool
+- **Dependencies**: None (foundational pack)
+
 ## [4.5.1] - 2025-11-13
 
 ### Fixes
