@@ -1,6 +1,6 @@
 # Packwerk Migration Checklist
 
-## Completed Packs (21/27)
+## Completed Packs (22/27)
 
 - [x] Pack 1: shared - 98 tests ✅
 - [x] Pack 2: accounts - 216 tests ✅
@@ -22,10 +22,11 @@
 - [x] Pack 18: domain_blocking - 238 tests ✅
 - [x] Pack 19: moderation - 71 tests ✅
 - [x] Pack 20: imports_exports - 66 tests ✅
+- [x] Pack 21: federation - 556 tests ✅
 
-**Total: 1,993 tests passing**
+**Total: 2,549 tests passing**
 
-## Remaining Packs (6)
+## Remaining Packs (5)
 
 ### High Priority
 
