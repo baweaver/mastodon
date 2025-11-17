@@ -1,6 +1,6 @@
 # Packwerk Migration Checklist
 
-## Completed Packs (11/27)
+## Completed Packs (16/27)
 
 - [x] Pack 1: shared - 98 tests ✅
 - [x] Pack 2: accounts - 216 tests ✅
@@ -13,10 +13,14 @@
 - [x] Pack 9: filters - 23 tests ✅
 - [x] Pack 10: tags - 105 tests ✅
 - [x] Pack 11: announcements - 25 tests ✅
+- [x] Pack 12: relationships - 100 tests ✅
+- [x] Pack 13: interactions - 30 tests ✅
+- [x] Pack 14: polls - 26 tests ✅
+- [x] Pack 15: conversations - 7 tests ✅
 
-**Total: 1,419 tests passing**
+**Total: 1,618 tests passing**
 
-## Remaining Packs (16)
+## Remaining Packs (11)
 
 ### High Priority
 
