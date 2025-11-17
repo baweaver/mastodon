@@ -9,6 +9,8 @@ dependencies:
   - packs/notifications
   - packs/media
   - packs/trends
+  - packs/moderation
+  - packs/federation
   - packs/admin
   - '.'
 public_path: app/public/

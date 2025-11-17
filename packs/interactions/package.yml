@@ -6,5 +6,7 @@ dependencies:
   - packs/statuses
   - packs/notifications
   - packs/relationships
+  - packs/trends
+  - packs/federation
   - '.'
 public_path: app/public/

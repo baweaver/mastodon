@@ -8,5 +8,7 @@ dependencies:
   - packs/relationships
   - packs/lists
   - packs/tags
+  - packs/federation
+  - packs/admin
   - '.'
 public_path: app/public/

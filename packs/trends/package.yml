@@ -6,6 +6,8 @@ dependencies:
   - packs/users
   - packs/statuses
   - packs/tags
+  - packs/interactions
+  - packs/timelines
   - packs/admin
   - packs/media
   - '.'

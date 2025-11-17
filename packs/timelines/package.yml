@@ -12,5 +12,6 @@ dependencies:
   - packs/lists
   - packs/tags
   - packs/filters
+  - packs/admin
   - '.'
 public_path: app/public/

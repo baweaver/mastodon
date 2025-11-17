@@ -10,6 +10,7 @@ dependencies:
   - packs/media
   - packs/timelines
   - packs/trends
+  - packs/federation
   - packs/admin
   - '.'
 public_path: app/public/
