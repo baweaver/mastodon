@@ -1,6 +1,6 @@
 # Packwerk Migration Checklist
 
-## Completed Packs (16/27)
+## Completed Packs (18/27)
 
 - [x] Pack 1: shared - 98 tests ✅
 - [x] Pack 2: accounts - 216 tests ✅
@@ -13,14 +13,16 @@
 - [x] Pack 9: filters - 23 tests ✅
 - [x] Pack 10: tags - 105 tests ✅
 - [x] Pack 11: announcements - 25 tests ✅
-- [x] Pack 12: relationships - 158 tests ✅ (models, services, workers, requests, serializers)
-- [x] Pack 13: interactions - 68 tests ✅ (models, services, workers, requests, serializers)
-- [x] Pack 14: polls - 45 tests ✅ (models, services, workers, requests, serializers, policies)
-- [x] Pack 15: conversations - 10 tests ✅ (models, workers, requests)
+- [x] Pack 12: relationships - 158 tests ✅
+- [x] Pack 13: interactions - 68 tests ✅
+- [x] Pack 14: polls - 45 tests ✅
+- [x] Pack 15: conversations - 10 tests ✅
+- [x] Pack 16: timelines - 171 tests ✅
+- [x] Pack 17: trends - 11 tests ✅
 
-**Total: 1,436 tests passing** (fabricators remain in spec/fabricators for global loading)
+**Total: 1,618 tests passing** (fabricators remain in spec/fabricators for global loading)
 
-## Remaining Packs (11)
+## Remaining Packs (9)
 
 ### High Priority
 
