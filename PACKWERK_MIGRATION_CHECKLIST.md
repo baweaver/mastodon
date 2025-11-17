@@ -1,6 +1,6 @@
 # Packwerk Migration Checklist
 
-## Completed Packs (22/27)
+## Completed Packs (23/27)
 
 - [x] Pack 1: shared - 98 tests ✅
 - [x] Pack 2: accounts - 216 tests ✅
@@ -23,10 +23,35 @@
 - [x] Pack 19: moderation - 71 tests ✅
 - [x] Pack 20: imports_exports - 66 tests ✅
 - [x] Pack 21: federation - 556 tests ✅
+- [x] Pack 22: webhooks - 1 test ✅
 
-**Total: 2,549 tests passing**
+**Total: 2,550 tests passing**
 
-## Remaining Packs (5)
+**Note**: Nested directories (concerns, forms, account_suggestions) moved to packs.
+Circular dependency issue documented in CIRCULAR_DEPENDENCY_ISSUE.md - needs architectural resolution.
+
+## Remaining Work
+
+### Models still in app/models (24 files)
+
+- account_statuses_cleanup_policy, account_suggestions, admin, async_refresh
+- content_retention_policy, extended_description, fasp, generated_annual_report
+- identity, marker, preview_card_provider, privacy_policy, remote_follow
+- rule_translation, search, setting, site_upload, software_update
+- terms_of_service, tombstone, translation, web, worker_batch
+
+### Controllers still in app/controllers (132 files)
+
+- Many API controllers, concerns, and other controllers
+
+### Services still in app/services (23 files)
+
+### Remaining packs to create (4 from original plan)
+
+- OAuth/Identity
+- Site settings/configuration
+- Remaining infrastructure
+- Catch-all for miscellaneous
 
 ### High Priority
 
