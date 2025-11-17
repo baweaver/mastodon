@@ -16,7 +16,7 @@ RSpec.describe 'API V1 Timelines List' do
       before do
         follow = Fabricate(:follow, account: user.account)
         list.accounts << follow.target_account
-        PostStatusService.new.call(follow.target_account, text: 'New status for user home timeline.')
+        PostStatusService.new.call(follow.target_account, text: I18n.t('New status for user home timeline.'))
       end
 
       it 'returns http success' do
