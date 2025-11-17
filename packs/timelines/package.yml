@@ -15,3 +15,4 @@ dependencies:
   - packs/admin
   - '.'
 public_path: app/public/
+owner: Platform

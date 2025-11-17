@@ -7,3 +7,4 @@ dependencies:
   - packs/relationships
   - '.'
 public_path: app/public/
+owner: Social

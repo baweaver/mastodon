@@ -18,3 +18,4 @@ dependencies:
   - packs/moderation
   - '.'
 public_path: app/public/
+owner: Platform

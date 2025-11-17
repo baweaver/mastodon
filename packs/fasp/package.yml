@@ -4,3 +4,4 @@ dependencies:
   - packs/shared
   - packs/accounts
   - packs/federation
+owner: Platform

@@ -1,12 +1,8 @@
-# Lists and Conversations domain
+---
 enforce_dependencies: false
 enforce_privacy: false
-
 dependencies:
   - packs/shared
   - packs/accounts
   - packs/statuses
-
-metadata:
-  owner: Social Team
-  description: User lists and conversations
+owner: Social

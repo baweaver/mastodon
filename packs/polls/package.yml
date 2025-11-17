@@ -9,3 +9,4 @@ dependencies:
   - packs/federation
   - '.'
 public_path: app/public/
+owner: Content

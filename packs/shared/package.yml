@@ -1,19 +1,4 @@
-# Shared utilities and infrastructure
-# This pack provides foundational code used by all other packs
+---
 enforce_dependencies: false
 enforce_privacy: false
-
-metadata:
-  owner: Platform Team
-  description: Shared validators, helpers, and utility libraries
-  
-# NOTE: The following files CANNOT be moved here due to circular dependencies in boot sequence:
-# - app/models/application_record.rb (loaded before packs)
-# - app/models/concerns/* (included during initialization)
-# - app/controllers/application_controller.rb (loaded before packs)
-# - app/controllers/concerns/* (included during initialization)
-# - app/services/base_service.rb (loaded before packs)
-# - app/services/concerns/* (included during initialization)
-# - app/workers/concerns/* (included during initialization)
-# These must remain in app/ until Mastodon's boot sequence is refactored.
-
+owner: Platform

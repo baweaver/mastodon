@@ -1,10 +1,6 @@
-# Account domain - user accounts and profiles
+---
 enforce_dependencies: false
 enforce_privacy: false
-
 dependencies:
   - packs/shared
-
-metadata:
-  owner: Accounts Team
-  description: User accounts, profiles, and account-related functionality
+owner: Accounts

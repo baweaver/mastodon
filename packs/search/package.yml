@@ -5,3 +5,4 @@ dependencies:
   - packs/accounts
   - packs/statuses
   - packs/tags
+owner: Platform

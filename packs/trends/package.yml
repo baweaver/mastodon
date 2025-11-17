@@ -12,3 +12,4 @@ dependencies:
   - packs/media
   - '.'
 public_path: app/public/
+owner: Content
