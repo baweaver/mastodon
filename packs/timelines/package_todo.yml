@@ -1,0 +1,20 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/timelines' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/api:
+  "::Api::BaseController":
+    violations:
+    - dependency
+    files:
+    - packs/timelines/app/controllers/api/v1/timelines/base_controller.rb
+packs/trends:
+  "::PreviewCardTrend":
+    violations:
+    - dependency
+    files:
+    - packs/timelines/app/controllers/api/v1/timelines/link_controller.rb

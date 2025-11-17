@@ -1,0 +1,48 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/relationships' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/api:
+  "::Api::BaseController":
+    violations:
+    - dependency
+    files:
+    - packs/relationships/app/controllers/api/v1/blocks_controller.rb
+    - packs/relationships/app/controllers/api/v1/follow_requests_controller.rb
+    - packs/relationships/app/controllers/api/v1/mutes_controller.rb
+packs/conversations:
+  "::AccountConversation":
+    violations:
+    - dependency
+    files:
+    - packs/relationships/app/services/after_block_service.rb
+  "::ConversationMute":
+    violations:
+    - dependency
+    files:
+    - packs/relationships/spec/requests/api/v1/statuses/mutes_spec.rb
+packs/domain_blocking:
+  "::AfterBlockDomainFromAccountService":
+    violations:
+    - dependency
+    files:
+    - packs/relationships/app/workers/after_account_domain_block_worker.rb
+    - packs/relationships/spec/workers/after_account_domain_block_worker_spec.rb
+packs/timelines:
+  "::FeedManager":
+    violations:
+    - dependency
+    files:
+    - packs/relationships/app/services/after_block_service.rb
+    - packs/relationships/app/workers/mute_worker.rb
+    - packs/relationships/spec/services/after_block_service_spec.rb
+    - packs/relationships/spec/services/mute_service_spec.rb
+  "::HomeFeed":
+    violations:
+    - dependency
+    files:
+    - packs/relationships/app/services/follow_service.rb

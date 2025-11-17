@@ -1,0 +1,21 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/fasp' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/admin:
+  "::Admin::Fasp::ProviderPolicy":
+    violations:
+    - dependency
+    files:
+    - packs/fasp/spec/policies/admin/fasp/provider_policy_spec.rb
+packs/statuses:
+  "::Status":
+    violations:
+    - dependency
+    files:
+    - packs/fasp/app/models/fasp/backfill_request.rb
+    - packs/fasp/app/workers/fasp/announce_trend_worker.rb

@@ -1,0 +1,14 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/conversations' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/api:
+  "::Api::BaseController":
+    violations:
+    - dependency
+    files:
+    - packs/conversations/app/controllers/api/v1/conversations_controller.rb

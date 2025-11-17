@@ -1,0 +1,20 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/annual_reports' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/api:
+  "::Api::BaseController":
+    violations:
+    - dependency
+    files:
+    - packs/annual_reports/app/controllers/api/v1/annual_reports_controller.rb
+packs/tags:
+  "::Tag":
+    violations:
+    - dependency
+    files:
+    - packs/annual_reports/app/lib/annual_report/top_hashtags.rb

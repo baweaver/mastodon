@@ -1,0 +1,21 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/interactions' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/api:
+  "::Api::BaseController":
+    violations:
+    - dependency
+    files:
+    - packs/interactions/app/controllers/api/v1/bookmarks_controller.rb
+    - packs/interactions/app/controllers/api/v1/favourites_controller.rb
+packs/fasp:
+  "::Fasp::AnnounceTrendWorker":
+    violations:
+    - dependency
+    files:
+    - packs/interactions/app/models/concerns/favourite/fasp_concern.rb

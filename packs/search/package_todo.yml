@@ -1,0 +1,29 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/search' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/api:
+  "::Api::BaseController":
+    violations:
+    - dependency
+    files:
+    - packs/search/app/controllers/api/v1/accounts/search_controller.rb
+    - packs/search/app/controllers/api/v1/peers/search_controller.rb
+    - packs/search/app/controllers/api/v2/search_controller.rb
+packs/fasp:
+  "::Fasp::AccountSearchWorker":
+    violations:
+    - dependency
+    files:
+    - packs/search/spec/requests/api/v2/search_spec.rb
+packs/federation:
+  "::Instance":
+    violations:
+    - dependency
+    files:
+    - packs/search/app/controllers/api/v1/peers/search_controller.rb
+    - packs/search/spec/requests/api/v1/peers/search_spec.rb

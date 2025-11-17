@@ -1,0 +1,25 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/web_ui' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/federation:
+  "::ActivityPub::Adapter":
+    violations:
+    - dependency
+    files:
+    - packs/web_ui/app/controllers/emojis_controller.rb
+  "::ActivityPub::EmojiSerializer":
+    violations:
+    - dependency
+    files:
+    - packs/web_ui/app/controllers/emojis_controller.rb
+packs/media:
+  "::CustomEmoji":
+    violations:
+    - dependency
+    files:
+    - packs/web_ui/app/controllers/emojis_controller.rb

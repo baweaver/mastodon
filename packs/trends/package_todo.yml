@@ -1,0 +1,14 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/trends' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/fasp:
+  "::Fasp::FollowRecommendation":
+    violations:
+    - dependency
+    files:
+    - packs/trends/app/models/account_suggestions/fasp_source.rb

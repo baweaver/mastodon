@@ -1,0 +1,21 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/polls' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/admin:
+  "::PollPolicy":
+    violations:
+    - dependency
+    files:
+    - packs/polls/spec/policies/poll_policy_spec.rb
+packs/api:
+  "::Api::BaseController":
+    violations:
+    - dependency
+    files:
+    - packs/polls/app/controllers/api/v1/polls/votes_controller.rb
+    - packs/polls/app/controllers/api/v1/polls_controller.rb

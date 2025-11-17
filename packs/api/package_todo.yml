@@ -1,0 +1,15 @@
+# This file contains a list of dependencies that are not part of the long term plan for the
+# 'packs/api' package.
+# We should generally work to reduce this list over time.
+#
+# You can regenerate this file using the following command:
+#
+# bin/packwerk update-todo
+---
+packs/fasp:
+  "::Fasp::FollowRecommendationWorker":
+    violations:
+    - dependency
+    files:
+    - packs/api/app/controllers/api/v2/suggestions_controller.rb
+    - packs/api/spec/requests/api/v2/suggestions_spec.rb
