@@ -1,6 +1,6 @@
 # Packwerk Migration Checklist
 
-## Completed Packs (18/27)
+## Completed Packs (19/27)
 
 - [x] Pack 1: shared - 98 tests ✅
 - [x] Pack 2: accounts - 216 tests ✅
@@ -19,10 +19,11 @@
 - [x] Pack 15: conversations - 10 tests ✅
 - [x] Pack 16: timelines - 171 tests ✅
 - [x] Pack 17: trends - 11 tests ✅
+- [x] Pack 18: domain_blocking - 238 tests ✅
 
-**Total: 1,618 tests passing** (fabricators remain in spec/fabricators for global loading)
+**Total: 1,856 tests passing**
 
-## Remaining Packs (9)
+## Remaining Packs (8)
 
 ### High Priority
 
