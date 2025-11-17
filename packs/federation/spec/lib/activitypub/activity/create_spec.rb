@@ -852,7 +852,7 @@ RSpec.describe ActivityPub::Activity::Create do
         let(:object_json) do
           build_object(
             type: 'Question',
-            content: 'Which color was the submarine?',
+            content: I18n.t('Which color was the submarine?'),
             oneOf: [
               {
                 name: 'Yellow',

@@ -143,10 +143,10 @@ RSpec.describe ActivityPub::FetchRemoteStatusService do
           startTime: '2024-01-31T20:00:00.000+01:00',
           location: {
             type: 'Place',
-            name: 'FooBar – The not converted location',
+            name: I18n.t('FooBar – The not converted location'),
           },
-          content: 'The not converted detailed description of the event object.',
-          summary: '<p>See you at the <strong>FooBar</strong>!</p><ul><li><strong>Doors:</strong> 8pm</li><li><strong>Music:</strong> 10pm</li></ul>',
+          content: I18n.t('The not converted detailed description of the event object.'),
+          summary: I18n.t('<p>See you at the <strong>FooBar</strong>!</p><ul><li><strong>Doors:</strong> 8pm</li><li><strong>Music:</strong> 10pm</li></ul>'),
           attributedTo: ActivityPub::TagManager.instance.uri_for(sender),
         }
       end
