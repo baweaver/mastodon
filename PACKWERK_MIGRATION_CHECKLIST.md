@@ -1,6 +1,6 @@
 # Packwerk Migration Checklist
 
-## Completed Packs (10/27)
+## Completed Packs (11/27)
 
 - [x] Pack 1: shared - 98 tests ✅
 - [x] Pack 2: accounts - 216 tests ✅
@@ -12,10 +12,11 @@
 - [x] Pack 8: media - 15 tests ✅
 - [x] Pack 9: filters - 23 tests ✅
 - [x] Pack 10: tags - 105 tests ✅
+- [x] Pack 11: announcements - 25 tests ✅
 
-**Total: 1,394 tests passing**
+**Total: 1,419 tests passing**
 
-## Remaining Packs (17)
+## Remaining Packs (16)
 
 ### High Priority
 
@@ -53,7 +54,7 @@
 - AsyncRefresh, CanonicalEmailBlock, ContentRetentionPolicy, Context
 - Fasp, Quote, RemoteFollow, RuleTranslation, Search, Tombstone, Translation
 - UsernameBlock, Web, WorkerBatch
-- (Plus models in subdirectories: concerns/_, form/_, terms_of_service/_, trends/_, web/_, fasp/_, annual_report/_, account_suggestions/_)
+- (Plus models in subdirectories: concerns/_, form/_, terms*of_service/*, trends/_, web/_, fasp/_, annual_report/_, account*suggestions/*)
 
 ### Controllers Still in app/controllers/
 
