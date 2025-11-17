@@ -6,7 +6,7 @@
 # See the Securing Rails Applications Guide for more information:
 # https://guides.rubyonrails.org/security.html#content-security-policy-header
 
-require_relative '../../app/lib/content_security_policy'
+require Rails.root.join('packs/shared/app/lib/content_security_policy')
 
 policy = ContentSecurityPolicy.new
 assets_host = policy.assets_host

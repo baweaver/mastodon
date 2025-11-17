@@ -1,0 +1,25 @@
+enforce_dependencies: true
+enforce_privacy: false
+dependencies:
+  - packs/shared
+  - packs/accounts
+  - packs/users
+  - packs/statuses
+  - packs/relationships
+  - packs/media
+  - packs/interactions
+  - packs/notifications
+  - packs/timelines
+  - packs/conversations
+  - packs/polls
+  - packs/lists
+  - packs/tags
+  - packs/filters
+  - packs/moderation
+  - packs/federation
+  - packs/domain_blocking
+  - packs/trends
+  - packs/announcements
+  - packs/admin
+  - packs/webhooks
+  - packs/imports_exports

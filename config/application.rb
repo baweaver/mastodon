@@ -57,9 +57,16 @@ Bundler.require(:pam_authentication) if ENV['PAM_ENABLED'] == 'true'
 
 module Mastodon
   class Application < Rails::Application
-    # Add packs to autoload paths FIRST, before anything else loads
-    config.paths.add 'packs', glob: '{*/app/*,*/app/*/concerns}'
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 8.0
+
+    # Add packs to autoload paths AFTER load_defaults to avoid frozen array issues
     Rails.root.glob('packs/*/app/*').each do |path|
+      config.autoload_paths << path
+      config.eager_load_paths << path
+    end
+    # Also add concerns subdirectories
+    Rails.root.glob('packs/*/app/*/concerns').each do |path|
       config.autoload_paths << path
       config.eager_load_paths << path
     end
@@ -69,9 +76,6 @@ module Mastodon
     Rails.root.glob('packs/*/app/helpers').each do |path|
       config.paths['app/helpers'] << path
     end
-
-    # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 8.0
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
