@@ -1,0 +1,12 @@
+enforce_dependencies: true
+enforce_privacy: false
+dependencies:
+  - packs/shared
+  - packs/accounts
+  - packs/users
+  - packs/statuses
+  - packs/tags
+  - packs/admin
+  - packs/media
+  - '.'
+public_path: app/public/
