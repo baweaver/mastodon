@@ -13,12 +13,12 @@
 - [x] Pack 9: filters - 23 tests ✅
 - [x] Pack 10: tags - 105 tests ✅
 - [x] Pack 11: announcements - 25 tests ✅
-- [x] Pack 12: relationships - 100 tests ✅
-- [x] Pack 13: interactions - 30 tests ✅
-- [x] Pack 14: polls - 26 tests ✅
-- [x] Pack 15: conversations - 7 tests ✅
+- [x] Pack 12: relationships - 158 tests ✅ (models, services, workers, requests, serializers)
+- [x] Pack 13: interactions - 68 tests ✅ (models, services, workers, requests, serializers)
+- [x] Pack 14: polls - 45 tests ✅ (models, services, workers, requests, serializers, policies)
+- [x] Pack 15: conversations - 10 tests ✅ (models, workers, requests)
 
-**Total: 1,618 tests passing**
+**Total: 1,436 tests passing** (fabricators remain in spec/fabricators for global loading)
 
 ## Remaining Packs (11)
 
